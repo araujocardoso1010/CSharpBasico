@@ -26,6 +26,12 @@
             v1.Frear();
             v2.Frear();
 
+            // alternativas
+            ((Onibus)v1).Frear();
+            (v1 as Onibus).Frear();
+            
+
+
             Console.WriteLine();
 
             CriarVeiculosAleatorios();
