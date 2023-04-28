@@ -28,10 +28,9 @@
 
             // alternativas
             ((Onibus)v1).Frear();
-            (v1 as Onibus).Frear();
+
+             if (v1 is Onibus) (v1 as Onibus).Frear(); // conversão segura
             
-
-
             Console.WriteLine();
 
             CriarVeiculosAleatorios();
